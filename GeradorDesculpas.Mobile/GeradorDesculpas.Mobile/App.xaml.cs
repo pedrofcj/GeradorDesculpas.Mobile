@@ -1,14 +1,17 @@
-﻿using Xamarin.Forms;
+﻿using GeradorDesculpas.Mobile.Services;
+using Xamarin.Forms;
 
 namespace GeradorDesculpas.Mobile
 {
     public partial class App : Application
     {
+
+        public static IShareService ShareService = DependencyService.Get<IShareService>();
+
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

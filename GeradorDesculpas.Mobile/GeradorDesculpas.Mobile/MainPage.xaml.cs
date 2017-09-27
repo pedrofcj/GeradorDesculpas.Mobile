@@ -29,5 +29,10 @@ namespace GeradorDesculpas.Mobile
         {
             GerarDesculpa();
         }
+
+        private void MenuItem_OnClicked(object sender, EventArgs e)
+        {
+            App.ShareService.ShareText(lblDesculpa.Text);
+        }
     }
 }

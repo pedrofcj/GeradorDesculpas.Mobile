@@ -2,7 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:GeradorDesculpas.Mobile"
-             x:Class="GeradorDesculpas.Mobile.MainPage">
+             x:Class="GeradorDesculpas.Mobile.MainPage"
+             Title="Gerador de Desculpas">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Share"
+            Clicked="MenuItem_OnClicked"/>
+        
+    </ContentPage.ToolbarItems>
 
     <StackLayout 
         BackgroundColor="White"
