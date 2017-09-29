@@ -18,6 +18,8 @@ namespace GeradorDesculpas.Mobile
             {
                 Command = new Command(GerarDesculpa)
             });
+
+            GerarDesculpa();
         }
 
         private void GerarDesculpa()
@@ -27,7 +29,6 @@ namespace GeradorDesculpas.Mobile
 
         protected override void OnAppearing()
         {
-            GerarDesculpa();
         }
 
         private void MenuItem_OnClicked(object sender, EventArgs e)

@@ -8,6 +8,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem
             Text="Share"
+            Order="Secondary"
             Clicked="MenuItem_OnClicked"/>
         
     </ContentPage.ToolbarItems>
@@ -19,7 +20,7 @@
 
         <Label
             x:Name="lblDesculpa"
-            TextColor="Red"
+            TextColor="#F44336"
             FontSize="Large"
             HorizontalTextAlignment="Center"
             MinimumHeightRequest="Infinity"
