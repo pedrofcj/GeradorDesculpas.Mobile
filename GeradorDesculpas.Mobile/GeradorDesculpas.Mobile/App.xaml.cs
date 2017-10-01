@@ -3,7 +3,7 @@ using Xamarin.Forms;
 
 namespace GeradorDesculpas.Mobile
 {
-    public partial class App : Application
+    public partial class App
     {
 
         public static IShareService ShareService = DependencyService.Get<IShareService>();
@@ -11,7 +11,7 @@ namespace GeradorDesculpas.Mobile
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new Views.MainPage());
         }
 
         protected override void OnStart()

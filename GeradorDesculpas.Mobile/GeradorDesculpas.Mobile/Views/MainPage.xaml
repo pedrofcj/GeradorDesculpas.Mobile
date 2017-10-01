@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GeradorDesculpas.Mobile"
+             x:Class="GeradorDesculpas.Mobile.Views.MainPage"
+             Title="Gerador de Desculpas">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="Compartilhar"
+            Order="Secondary"
+            Command="{Binding CompartilharCommand}"/>
+
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout 
+            x:Name="mainLayout"
+            BackgroundColor="White"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+
+            <Label
+                x:Name="lblDesculpa"
+                TextColor="#F44336"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                MinimumHeightRequest="Infinity"
+                Margin="10, 0"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand"
+                Text="{Binding Desculpa}"/>
+
+            <Image
+                x:Name="btnGerarDesculpa"
+                Source="botao2"
+                VerticalOptions="End"
+                Margin="0,0,0,50"
+                HorizontalOptions="Center"
+                BackgroundColor="White">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding GerarDesculpaCommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

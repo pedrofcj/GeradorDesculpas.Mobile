@@ -136,8 +136,6 @@ namespace GeradorDesculpas.Mobile.Util
         public static string GerarDesculpa()
         {
             return Aleatorio(Problemas) + Aleatorio(Natureza) + Aleatorio(Culpado) + Aleatorio(Motivo) + Aleatorio(Vitima);
-
-            //return "";
         }
     }
 }
