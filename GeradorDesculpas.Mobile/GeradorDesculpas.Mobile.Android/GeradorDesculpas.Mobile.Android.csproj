@@ -149,12 +149,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeradorDesculpas.Mobile\GeradorDesculpas.Mobile.csproj">
-      <Project>{E8EB5917-E1B5-4B59-A000-4DBD55CC3C39}</Project>
-      <Name>GeradorDesculpas.Mobile</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\botao2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +179,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GeradorDesculpas.MobileCore\GeradorDesculpas.Mobile.csproj">
+      <Project>{12E5E799-0EC7-461A-9046-14FE75EB83C4}</Project>
+      <Name>GeradorDesculpas.Mobile</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />

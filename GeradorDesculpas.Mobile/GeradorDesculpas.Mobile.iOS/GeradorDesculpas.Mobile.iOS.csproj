@@ -119,12 +119,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GeradorDesculpas.Mobile\GeradorDesculpas.Mobile.csproj">
-      <Project>{E8EB5917-E1B5-4B59-A000-4DBD55CC3C39}</Project>
-      <Name>GeradorDesculpas.Mobile</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\botao2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +197,12 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Icon-Small%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GeradorDesculpas.MobileCore\GeradorDesculpas.Mobile.csproj">
+      <Project>{12E5E799-0EC7-461A-9046-14FE75EB83C4}</Project>
+      <Name>GeradorDesculpas.Mobile</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.18342\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.18342\build\netstandard1.0\Xamarin.Forms.targets')" />
