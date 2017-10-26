@@ -199,7 +199,7 @@
     <BundleResource Include="Resources\Icon-Small%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GeradorDesculpas.MobileCore\GeradorDesculpas.Mobile.csproj">
+    <ProjectReference Include="..\GeradorDesculpas.Mobile\GeradorDesculpas.Mobile.csproj">
       <Project>{12E5E799-0EC7-461A-9046-14FE75EB83C4}</Project>
       <Name>GeradorDesculpas.Mobile</Name>
     </ProjectReference>

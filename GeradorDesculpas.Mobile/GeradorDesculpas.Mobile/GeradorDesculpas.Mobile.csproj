@@ -25,10 +25,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\MainPage.xaml.cs">
-      <DependentUpon>..\..\GeradorDesculpas.Mobile\GeradorDesculpas.Mobile\Views\MainPage.xaml</DependentUpon>
+      <DependentUpon>*.xaml</DependentUpon>
     </Compile>
     <Compile Update="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
+      <DependentUpon>*.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

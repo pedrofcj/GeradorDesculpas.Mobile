@@ -7,7 +7,6 @@ using Xamarin.Forms;
 namespace GeradorDesculpas.Mobile.Droid.Services
 {
     public class ShareService : IShareService
-
     {
         public void ShareText(string text)
         {

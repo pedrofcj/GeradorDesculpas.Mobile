@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorDesculpas.Mobile.iOS
 EndProject
 Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "GeradorDesculpas.Mobile.UWP", "GeradorDesculpas.Mobile\GeradorDesculpas.Mobile.UWP\GeradorDesculpas.Mobile.UWP.csproj", "{67060766-0A8C-49B6-B96A-185CDC071604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorDesculpas.Mobile", "GeradorDesculpas.MobileCore\GeradorDesculpas.Mobile.csproj", "{12E5E799-0EC7-461A-9046-14FE75EB83C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorDesculpas.Mobile", "GeradorDesculpas.Mobile\GeradorDesculpas.Mobile\GeradorDesculpas.Mobile.csproj", "{12E5E799-0EC7-461A-9046-14FE75EB83C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
