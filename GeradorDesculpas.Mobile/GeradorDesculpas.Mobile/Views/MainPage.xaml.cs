@@ -1,11 +1,12 @@
 ﻿using System;
-using GeradorDesculpas.Mobile.Util;
-using GeradorDesculpas.Mobile.ViewModels;
+using System.Collections.Generic;
+
 using Xamarin.Forms;
+using GeradorDesculpas.Mobile.ViewModel;
 
 namespace GeradorDesculpas.Mobile.Views
 {
-    public partial class MainPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
@@ -13,6 +14,5 @@ namespace GeradorDesculpas.Mobile.Views
 
             BindingContext = new MainPageViewModel();
         }
-
     }
 }
