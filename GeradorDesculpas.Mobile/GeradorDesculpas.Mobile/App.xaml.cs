@@ -1,4 +1,8 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using GeradorDesculpas.Mobile.Views;
+using Prism;
+using Prism.Ioc;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -7,26 +11,25 @@ namespace GeradorDesculpas.Mobile
     public partial class App
     {
 
+        public App(): this(null)
+        {
+            //InitializeComponent();
+            //MainPage = new NavigationPage(new Views.MainPage());
+        }
 
-        public App()
+        public App(IPlatformInitializer initializer) : base(initializer) { }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new Views.MainPage());
+            await NavigationService.NavigateAsync(new Uri("/NavigationPage/MainView", UriKind.Absolute));
         }
 
-        protected override void OnStart()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Handle when your app starts
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainView>();
         }
 
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
-        }
     }
 }
