@@ -54,7 +54,6 @@ namespace GeradorDesculpas.Mobile.Util
             "do Marco Antonio Villa ",
             "do Delcídio ",
             "do Nestor Cerveró ",
-            "do Gilmar Mendes ",
             "do Antagonista ",
             "do Eduardo Cunha ",
             "do PMBD ",
